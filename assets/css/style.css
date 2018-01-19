@@ -1286,7 +1286,9 @@ body.modal-open { overflow:inherit; padding-right:inherit !important; }
 }
 
 
-
+.stars {
+	font-size: 150%;
+}
 /* ---------------------------------------------------------------
  * 01. vegas plugin default styles
  * --------------------------------------------------------------- */
@@ -1777,3 +1779,4 @@ body.vegas-container > .vegas-overlay, body.vegas-container > .vegas-slide, body
     transform: scale(1) translate(0, 0);
   }
 }
+
