@@ -22,10 +22,10 @@ $("#page-top").vegas({
   transitionDuration: 2500,
   delay: 5000,
     slides: [
-      { src: "images/for-website/1.jpg" },
-        { src: "images/for-website/2.jpg" },
-        { src: "images/for-website/7.jpg" },
-        { src: "images/for-website/26.jpg" }
+      { src: "images/for-website/final02.jpg" },
+        { src: "images/for-website/final03.jpg" },
+        { src: "images/for-website/final05.jpg" },
+        { src: "images/for-website/final04.jpg" }
     ]
 });
 
