@@ -46,6 +46,11 @@ Tags: HTML, Template, Coming Soon, Kite
 /* 1 - Import Google Font End 
 ---------------------------------------------------------------------- */
 
+@button-colour: #009ED8;
+@button-text: #ffffff;
+@regular-text: #333;
+@button-tint: fadeout(#000, 90%);
+@background: #303036;
 
 
 
@@ -200,7 +205,7 @@ a:focus{
 	border-top-color:transparent;
 	position:absolute;
 	top:20px;
-	left:35px;
+	left:35px;	
 	
 	-webkit-transform:rotate(45deg);
 	   -moz-transform:rotate(45deg);
@@ -1782,5 +1787,90 @@ body.vegas-container > .vegas-overlay, body.vegas-container > .vegas-slide, body
     -webkit-transform: scale(1) translate(0, 0);
     transform: scale(1) translate(0, 0);
   }
+}
+
+
+.button-goto{
+	display: inline-block;
+	font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	padding: .8em 1.4em;
+	padding-right: 4.7em;
+	background: @button-colour;
+	border: none;
+	color: white;
+	transition: .2s;
+	&:before,
+	&:after {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		padding-top: inherit;
+		padding-bottom: inherit;
+		width: 2.8em;
+		content: "\00a0";
+		font-family: 'FontAwesome', sans-serif;
+		font-size: 1.2em;
+		text-align: center;
+		
+		transition: .2s;
+		transform-origin: 50% 60%;
+	}
+	&:before {
+		background: @button-tint;
+	}
+	&:hover {
+		background: darken(@button-colour, 10%);
+	}
+	&:active,
+	&:focus {
+		background: darken(@button-colour, 30%);
+		outline: none;
+	}
+}
+
+.button-goto {
+	min-width: 15em;
+}
+
+.arrow {
+	background: #FE5F55;
+	&:hover {
+		background: darken(#FE5F55, 10%);
+	}
+	&:active,
+	&:focus {
+		background: darken(#FE5F55, 30%);
+	}
+	&:after {
+		content: "\F054";
+	}
+	&:hover:after {
+		-webkit-animation: bounceright .3s alternate ease infinite;
+		animation: bounceright .3s alternate ease infinite;
+	}
+}
+
+
+@-webkit-keyframes bounceright {
+	from { -webkit-transform: translateX(0); }
+	to   { -webkit-transform: translateX(3px); }
+}
+
+@-webkit-keyframes wiggle {
+	from { -webkit-transform: rotate(0deg); }
+	to   { -webkit-transform: rotate(30deg); }
+}
+
+@keyframes bounceright {
+	from { transform: translateX(0); }
+	to   { transform: translateX(3px); }
+}
+
+@keyframes wiggle {
+	from { transform: rotate(0deg); }
+	to   { transform: rotate(30deg); }
 }
 
