@@ -22,9 +22,9 @@ $("#page-top").vegas({
   transitionDuration: 2500,
   delay: 5000,
     slides: [
-      { src: "images/suggestions/img01.jpg" },
-        { src: "images/suggestions/img02.jpg" },
-        { src: "images/suggestions/img03.jpg" }
+      { src: "images/img01.jpg" },
+        { src: "images/img02.jpg" },
+        { src: "images/img03.jpg" }
     ]
 });
 
