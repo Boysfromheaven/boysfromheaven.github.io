@@ -1,3 +1,3 @@
 # boysfromheaven.github.io
 
-This is their repository for their band website
+This is the repository for their band website.
