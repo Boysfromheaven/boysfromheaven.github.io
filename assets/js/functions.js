@@ -3,12 +3,12 @@
 -------------------------------------------------------------------*/
 var  pageTopImage = jQuery('#page-top').data('background-image');
 var  aboutImage = jQuery('#about').data('background-image');
-var  subscribeImage = jQuery('#subscribe').data('background-image');
+var  subscribeImage = jQuery('#music').data('background-image');
 var  contactImage = jQuery('#contact').data('background-image');
 
 if (pageTopImage) {  jQuery('#page-top').css({ 'background-image':'url(' + pageTopImage + ')' }); };
 if (aboutImage) {  jQuery('#about').css({ 'background-image':'url(' + aboutImage + ')' }); };
-if (subscribeImage) {  jQuery('#subscribe').css({ 'background-image':'url(' + subscribeImage + ')' }); };
+if (subscribeImage) {  jQuery('#music').css({ 'background-image':'url(' + subscribeImage + ')' }); };
 if (contactImage) {  jQuery('#contact').css({ 'background-image':'url(' + contactImage + ')' }); };
 
 /* Background Images End
@@ -22,10 +22,9 @@ $("#page-top").vegas({
   transitionDuration: 2500,
   delay: 5000,
     slides: [
-      { src: "images/for-website/final02.jpg" },
-        { src: "images/for-website/final03.jpg" },
-        { src: "images/for-website/final05.jpg" },
-        { src: "images/for-website/final04.jpg" }
+      { src: "images/suggestions/img01.jpg" },
+        { src: "images/suggestions/img02.jpg" },
+        { src: "images/suggestions/img03.jpg" }
     ]
 });
 
@@ -101,7 +100,7 @@ jQuery(document).ready(function($) {
     	$('html,body').animate({scrollTop:$('#about').offset().top}, 1000);
   	});
   	$('.next-section .go-to-subscribe').click(function() {
-    	$('html,body').animate({scrollTop:$('#subscribe').offset().top}, 1000);
+    	$('html,body').animate({scrollTop:$('#music').offset().top}, 1000);
   	});
   	$('.next-section .go-to-contact').click(function() {
     	$('html,body').animate({scrollTop:$('#contact').offset().top}, 1000);
