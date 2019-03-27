@@ -24,7 +24,7 @@ $("#page-top").vegas({
     slides: [
       { src: "images/img01.jpg" },
         { src: "images/img02.jpg" },
-        { src: "images/img03.jpg" }
+        { src: "images/img06.jpg" }
     ]
 });
 
