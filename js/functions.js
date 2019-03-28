@@ -29,8 +29,8 @@ $("#page-top").vegas({
 });
 
 function collapseNavBar(){
-  var windowheight = jQuery(window).height();
-    if(windowheight < 992) {
+  var windowwidth = jQuery(window).width();
+    if(windowwidth < 992) {
       $('.navbar-toggle').click(); 
     }
 }
@@ -52,7 +52,8 @@ jQuery(document).ready(function($) {
 
     /* Navbar collapse when click on screen
     -------------------------------------------------------------------*/    
-    if(windowheight < 992){
+    var windowwidth = jQuery(window).width();
+    if(windowwidth < 992){
       $(".section-style-top, .section-style").click(function() {
           if (! $('#navbar-button').hasClass("collapsed")){
             $('.navbar-toggle').click();  
