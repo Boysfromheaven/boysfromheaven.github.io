@@ -40,7 +40,7 @@
 
 		<div class="navbar-header">
 			<!-- responsive navigation -->
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<button id="navbar-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
 				<i class="fa fa-bars"></i>
 			</button> <!-- /.navbar-toggle -->
@@ -50,16 +50,16 @@
 		<nav class="collapse navbar-collapse">
 			<!-- Main navigation -->
 			<ul id="headernavigation" class="nav navbar-nav">
-				<li class="active">
+				<li class="active" onclick="collapseNavBar()">
 					<a href="#page-top">Home</a>
 				</li>	
-				<li>
+				<li onclick="collapseNavBar()">
 					<a href="#about">About</a>
 				</li>
-				<li>
+				<li onclick="collapseNavBar()">
 					<a href="#music">Music</a>
 				</li>
-				<li>
+				<li onclick="collapseNavBar()">
 					<a href="#contact">Contact</a>
 				</li>		
 			</ul> <!-- /.nav .navbar-nav -->

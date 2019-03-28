@@ -28,13 +28,17 @@ $("#page-top").vegas({
     ]
 });
 
-
+function collapseNavBar(){
+  var windowheight = jQuery(window).height();
+    if(windowheight < 992) {
+      $('.navbar-toggle').click(); 
+    }
+}
 
 /* Document Ready function
 -------------------------------------------------------------------*/
 jQuery(document).ready(function($) {
 	"use strict";
-
 
     /* Window Height Resize
     -------------------------------------------------------------------*/
@@ -46,6 +50,16 @@ jQuery(document).ready(function($) {
     /* Window Height Resize End
     -------------------------------------------------------------------*/
 
+    /* Navbar collapse when click on screen
+    -------------------------------------------------------------------*/    
+    if(windowheight < 992){
+      $(".container").click(function() {
+          if (! $('#navbar-button').hasClass("collapsed")){
+            $('.navbar-toggle').click();  
+          }
+      });
+    }
+    
 
     
 	/* Main Menu   

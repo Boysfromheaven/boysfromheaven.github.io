@@ -443,10 +443,12 @@ textarea:-webkit-autofill {
     }
     .navbar-toggle {
         display: block;
+
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: none;
+        color: red;
     }
     .navbar-fixed-top {
 		top: 0;
@@ -472,9 +474,10 @@ textarea:-webkit-autofill {
 }
 
 @media screen and (max-width: 992px){
-	#headernavigation{
+	#main-menu{
 		background:rgba(0,0,0,.5);
 	}
+
 	.navbar-default .navbar-toggle:hover, 
 	.navbar-default .navbar-toggle:focus{
 		background-color:transparent;
