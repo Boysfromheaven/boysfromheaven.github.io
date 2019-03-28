@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
     /* Navbar collapse when click on screen
     -------------------------------------------------------------------*/    
     if(windowheight < 992){
-      $(".container").click(function() {
+      $(".section-style-top, .section-style").click(function() {
           if (! $('#navbar-button').hasClass("collapsed")){
             $('.navbar-toggle').click();  
           }
