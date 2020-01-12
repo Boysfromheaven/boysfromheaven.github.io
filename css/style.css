@@ -114,6 +114,7 @@ a:focus{
 	font-weight:100;
 	text-align:center;
 	margin:0;
+	font-size: 45px
 }
 .section-name span{
 	display:inline-block;
