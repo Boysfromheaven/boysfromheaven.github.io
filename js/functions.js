@@ -14,27 +14,6 @@ if (contactImage) {  jQuery('#contact').css({ 'background-image':'url(' + contac
 /* Background Images End
 -------------------------------------------------------------------*/
 
-/* --------------------------------------------------- */
-/*  Vegas Slideshow
------------------------------------------------------- */
-$("#page-top").vegas({
-  transition: 'fade',
-  transitionDuration: 2500,
-  delay: 5000,
-    slides: [
-      { src: "images/img01.jpg" },
-        { src: "images/img02.jpg" },
-        { src: "images/img06.jpg" }
-    ]
-});
-
-function collapseNavBar(){
-  var windowwidth = jQuery(window).width();
-    if(windowwidth < 992) {
-      $('.navbar-toggle').click(); 
-    }
-}
-
 /* Document Ready function
 -------------------------------------------------------------------*/
 jQuery(document).ready(function($) {
