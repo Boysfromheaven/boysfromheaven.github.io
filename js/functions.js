@@ -14,6 +14,10 @@ if (contactImage) {  jQuery('#contact').css({ 'background-image':'url(' + contac
 /* Background Images End
 -------------------------------------------------------------------*/
 
+/* --------------------------------------------------- */
+/*  Vegas Slideshow
+------------------------------------------------------ */
+
 /* Document Ready function
 -------------------------------------------------------------------*/
 jQuery(document).ready(function($) {
