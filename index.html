@@ -20,7 +20,7 @@
 
 
         .bgimg {
-            min-height: 100%;
+            min-height: 100vh;
             background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/Sailing_on_Facebook.jpg") center center;
             width: 100%;
             height: auto;
@@ -54,26 +54,70 @@
             margin-top: 50px;
             position: relative;
         }
+
+        .w3-display-middle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .video-container {
+        width: 90%; 
+        max-width: 800px;
+        margin-top: 50px;
+        position: relative;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px; 
+    }
+
+    .logos img {
+        width: 15vw; 
+        max-width: 70px;
+        height: auto;
+        margin: 0 10px;
+    }
+
+     /* Media query for smaller screens */
+     @media (max-width: 375px) {
+        .video-container {
+            width: 100%;
+            max-width: none;
+        }
+
+        .logos img {
+        width: 25vw; 
+        max-width: 50px; 
+    }
+
     </style>
 </head>
 <body>
 
-
-
 <div class="bgimg w3-display-container w3-text-white card-overlay">
-        <img  class="w3-display-topmiddle overskrift" src="images/logo_blue.png" width="37%" height="37%">
-            <div class="w3-display-middle">
-                <iframe width="700vw" height="400vh" src="https://www.youtube.com/embed/9H1AqQBi6Ng" title="Boys From Heaven - Sarah (Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <div class="logos">
-                    <p class="w3-large w3-center" id="logos">
-                        <a href="https://open.spotify.com/album/5IAONfYhabRy551kVCzGvL?si=IdDhfbtASU-U2T8kOI24QQ" target="_blank"> <img src="images/spotify_black.png" alt="spotify" height="95" width="95"> </a>
-                        <a href="https://facebook.com/boysfromheavenmusic" target="_blank"> <img src="images/facebook_black.png" alt="facebook" height="90" width="90"> </a>
-                        <a href="https://instagram.com/boysfromheavenmusic" target="_blank"> <img src="images/ig_black.png" alt="instagram" height="90" width="90"> </a>
-                        <a href="https://music.apple.com/dk/album/sailing-on-radio-edit/1660916835?i=1660917316" target="_blank"> <img src="images/apple.png" height="90" width="90"></a>
-                        <a href="https://linktr.ee/boysfromheaven" target="_blank"> <img src="images/linktree.png" height="85" width="85"></a>
-                    </p>
-                </div>
-            </div>
+    <img class="w3-display-topmiddle overskrift" src="images/logo_blue.png" width="37%" height="37%">
+    <div class="w3-display-middle">
+        <div class="video-container">
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/9H1AqQBi6Ng" title="Boys From Heaven - Sarah (Music Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="logos">
+            <p class="w3-large w3-center" id="logos">
+                <a href="https://open.spotify.com/album/6J0vDvw7qmiFaDSyixPnwj?si=Pczc9nMYQhe30dcXzJxpNg" target="_blank"> <img src="images/spotify_black.png" alt="spotify" height="95" width="95"> </a>
+                <a href="https://facebook.com/boysfromheavenmusic" target="_blank"> <img src="images/facebook_black.png" alt="facebook" height="90" width="90"> </a>
+                <a href="https://instagram.com/boysfromheavenmusic" target="_blank"> <img src="images/ig_black.png" alt="instagram" height="90" width="90"> </a>
+                <a href="https://music.apple.com/dk/artist/boys-from-heaven/1160326194" target="_blank"> <img src="images/apple.png" height="90" width="90"></a>
+                <a href="https://linktr.ee/boysfromheaven" target="_blank"> <img src="images/linktree.png" height="85" width="85"></a>
+            </p>
+        </div>
+    </div>
+</div>
+
 </div>
 <footer id="footer-section"> <p><b>Booking enquiries</b>: sandie@targetgroup.dk &nbsp;&nbsp;&nbsp;&nbsp; <b>Email:</b> contact@boysfromheaven.com</p></footer>
 </body>
